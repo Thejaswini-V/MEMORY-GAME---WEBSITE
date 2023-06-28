@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: salmon;
+}
+h3{
+    font-size: 3.5rem;
+    text-align: center;
+    color:#191825;
+    margin-top: 10px;
+}
+.game{
+    display:grid;
+    grid-template-columns: repeat(4,120px);
+    grid-row-gap: 3em;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+#gameboard div{
+    height:120px;
+    width:90px;
+    border-radius:10px;
+    border: 2px solid #191825;
+
+    
+    
+}
+.cardback{
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image:radial-gradient(circle at center center,#191825, #e5e5f7), repeating-radial-gradient(circle at center center,#191825,#191825, 10px, transparent 20px, transparent 10px);
+    background-blend-mode: multiply;
+    
+}
+#gameboard div:hover{
+    cursor: pointer;
+}
+.active{
+    font-size:60px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:aliceblue ;
+}
+.won{
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#800000;
+    font-family: 'Times New Roman', Times, serif;
+
+}
